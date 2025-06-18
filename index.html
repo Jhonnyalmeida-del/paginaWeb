@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JJC Transportes Executivo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container-principal {
+      max-width: 95%;
+      width: 95%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+    }
+    html, body{
+        height: 100%;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 95%;
+      padding: 3px 0;
+    }
+
+    header img.logo {
+      height: 80px;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px; 
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #000;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      margin-top: 30px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .content {
+      margin: 40px auto;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+    }
+
+    .contact {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 10px;
+      width: 100vw;
+
+    }
+
+    .contact h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .contact a {
+      color: #00ffcc;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebc57;
+    }
+
+    /* Slide Show */
+    .carousel {
+      position: relative;
+      max-width: 95%;
+      width: 95%;
+      margin: 10px auto;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.6s ease-in-out;
+    }
+
+    .slide {
+      position: relative;
+      min-width: 100%;
+      border-radius: 12px;
+      
+      height: 300px;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slide-text {
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      max-width: 95%;
+      padding: 10px;
+      margin: 2px;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .carousel-buttons {
+      text-align: center;
+    }
+
+    .carousel-buttons button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .carousel-buttons button:hover {
+      background-color: #444;
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        flex-direction: row;
+        text-align: left;
+        justify-content: center;
+        gap: 40px;
+      }
+
+      .hero .text {
+        max-width: 400px;
+      }
+
+      .hero img {
+        margin-top: 0;
+      }
+
+      .slide {
+        height: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <section class="container-principal">
+        <header>
+            <div class="logo-container">
+            <img src="img/logo-preta.png" alt="Logo JJC Transportes Executivo" class="logo">
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="text">
+            <h1>Transporte Executivo com Conforto e Estilo</h1>
+            <p>Oferecemos um serviço premium para quem valoriza pontualidade, segurança e sofisticação em cada trajeto.</p>
+            </div>
+            <img src="img/motorista.jpeg" alt="Motorista Executivo JJC">
+        </section>
+
+        <section class="content">
+            <h2>Sobre o Profissional</h2>
+            <p>Motorista com ampla experiência no setor executivo, atendimento personalizado e total discrição. Ideal para traslados corporativos, eventos, passeios e viagens intermunicipais.</p>
+        </section>
+
+        <!-- Carousel de fotos -->
+        <section class="carousel">
+            <div class="slides" id="slides">
+            <div class="slide" style="background-image: url('img/frente-de-casa.jpeg');">
+                <div class="slide-text">Veículo higienizado e confortável</div>
+            </div>
+            <div class="slide" style="background-image: url('img/motorista.jpeg');">
+                <div class="slide-text">Interior espaçoso e climatizado</div>
+            </div>
+            <div class="slide" style="background-image: url('img/logo-jjc.jpeg');">
+                <div class="slide-text">Atendimento VIP para todos os clientes</div>
+            </div>
+            </div>
+            <div class="carousel-buttons">
+            <button onclick="prevSlide()">◀</button>
+            <button onclick="nextSlide()">▶</button>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h3>Solicite seu transporte</h3>
+            <p>Atendimento via WhatsApp:</p>
+            <p><a href="https://wa.me/5547999999999" target="_blank">(47) 99999-9999</a></p>
+        </section>
+    </section>
+
+
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5547999999999" class="whatsapp-button" target="_blank">📱</a>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.getElementById('slides');
+
+    function showSlide(index) {
+      const totalSlides = slides.children.length;
+      if (index < 0) index = totalSlides - 1;
+      if (index >= totalSlides) index = 0;
+      currentSlide = index;
+      slides.style.transform = 'translateX(' + (-index * 100) + '%)';
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      showSlide(currentSlide - 1);
+    }
+
+    // Troca automática a cada 5s
+    setInterval(nextSlide, 5000);
+  </script>
+
+</body>
+</html>
