@@ -4,7 +4,7 @@ const menuList = document.getElementById("menu-list");
 // Ao clicar no botão, abre ou fecha o menu
 buttonMenu.addEventListener("click", function (event) {
     event.stopPropagation(); // Evita que o clique propague para o documento
-    if (menuList.style.display === "flex") {
+    if (window.innerWidth >= 1024 && menuList.style.display === "flex") {
         menuList.style.display = "none";
     } else {
         menuList.style.display = "flex";
