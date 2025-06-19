@@ -1,104 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>JJC Transportes Executivo</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  
 </head>
 <body>
-    <section class="container-principal">
+    <div class="container-principal">
         <header>
-            <div class="logo-container">
-            <img src="img/logo-preta.png" alt="Logo JJC Transportes Executivo" class="logo">
-            </div>
+            <nav>
+                <a href="">
+                    <img src="img/logo-preta.png" alt="logo preta">
+                </a>
+                <button class="button-menu" id="button-menu">
+                    <span class="button-bar"></span>
+                    <span class="button-bar"></span>
+                    <span class="button-bar"></span>
+                </button>
+                <ul class="menu-list" id="menu-list">
+                    <li>Inicio</li>
+                    <li>Jhonny Almeida</li>
+                    <li>Recomendações</li>
+                    <li class="border-none">Agende sua viagemn</li>
+                </ul>
+            </nav>
         </header>
-
-        <section class="hero">
-            <div class="text">
-            <h1>Transporte Executivo com Conforto e segurança</h1>
-            <p>Oferecemos um serviço premium para quem valoriza pontualidade, segurança e sofisticação em cada trajeto.</p>
+        <main>
+            <div class="div-init">
+                <div class="init-text">
+                    <h1>Translado Executivo com Conforto e Segurança</h1>
+                    <h3>Serviço premium para quem valoriza pontualidade, segurança e sofisticação em cada trajeto.</h3>
+                </div>
+                <div class="init-image">
+                    <img src="img/motorista.jpeg" alt="Jhonny-na-malwee">
+                </div>
             </div>
-            <img src="img/motorista.jpeg" alt="Motorista Executivo JJC">
-        </section>
 
-        <section class="content">
-            <h2>Sobre o Profissional</h2>
-            <p>Motorista com ampla experiência no setor executivo, atendimento personalizado e total discrição. Ideal para traslados corporativos, eventos, passeios e viagens intermunicipais.</p>
-        </section>
+            <div class="div-profissional">
+                <div class="profissional-box">
+                    <div class="prof-heads">
+                        <h2>Jhonny Almeida</h2>
+                        <p>Um profissional dedicado, com vasta experiência em transporte executivo. Meu compromisso é garantir que cada viagem seja confortável, segura e pontual.</p>
+                        <img src="img/jhonny.jpg" alt="Jhonny Almeida" width="80px" height="85px">
+                    </div>
+                    <!-- Carousel -->
+                    <div class="carousel">
+                        <div class="slides-box" id="slides-box">
+                            <div class="slide" style="background-image: url('img/frente-de-casa.jpeg');">
+                                
+                                <div class="slide-text">Veículo higienizado e confortável
+                                </div>
+                            </div>
+                            <div class="slide" style="background-image: url('img/motorista.jpeg');">
+                                <div class="slide-text">Interior espaçoso e climatizado
+                                </div>
+                            </div>
+                            <div class="slide" style="background-image: url('img/logo-jjc.jpeg');">
+                                <div class="slide-text">Atendimento VIP para todos os clientes
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-buttons">
+                            <div class="prev-button" id="prev-slide"><i class="fas fa-chevron-left"></i></div>
+                            <div class="next-button" id="next-slide"><i class="fas fa-chevron-right"></i></div>
+                        </div>
+                    </div>
 
-        <!-- Carousel de fotos -->
-        <section class="carousel">
-            <div class="slides" id="slides">
-            <div class="slide" style="background-image: url('img/frente-de-casa.jpeg');">
-                <div class="slide-text">Veículo higienizado e confortável</div>
+                </div>
+
+
             </div>
-            <div class="slide" style="background-image: url('img/motorista.jpeg');">
-                <div class="slide-text">Interior espaçoso e climatizado</div>
+
+            <div class="div-services">
+                <h2>VIAGENS EXECUTIVAS</h2>
+                <div class="service-list">
+                    <ul>
+                        <li>Aeroportos</li>
+                        <li>Viagem a trabalho</li>
+                        <li>Hospitais e Clínicas</li>
+                        <li>Eventos e Convenções</li>
+                        <li>City Tour / Passeios Personalizados</li>
+                        <li>Viagens Intermunicipais ou Interestaduais</li>
+                        <li>Transporte VIP para Clientes e Executivos</li>
+                        <li>Entrega de Documentos ou Encomendas Urgentes</li>
+                    </ul>
+                </div>
+                <a href="https://wa.me/5547988832816?text=Ol%C3%A1%2C%20Jhonny%2C%20tudo%20bem%3F%20Estava%20vendo%20sua%20p%C3%A1gina%20na%20web.%20Podemos%20conversar%3F" target="_blank" class="contact-button">
+                    Agendar Viagem
+                </a>
             </div>
-            <div class="slide" style="background-image: url('img/logo-jjc.jpeg');">
-                <div class="slide-text">Atendimento VIP para todos os clientes</div>
+
+        </main>
+
+        <!-- Botão flutuante WhatsApp -->
+        <a href="https://wa.me/5547988832816?text=Ol%C3%A1%2C%20Jhonny%2C%20tudo%20bem%3F%20Estava%20vendo%20sua%20p%C3%A1gina%20na%20web.%20Podemos%20conversar%3F" target="_blank" class="whatsapp-button">
+            <i class="fab fa-whatsapp" style="font-size: 32px;"></i>
+        </a>
+
+        <footer>
+            <div class="footer-content">
+                <p>© 2025 Jhonny Almeida. Todos os direitos reservados.</p>
             </div>
-            </div>
-            <div class="carousel-buttons">
-            <button onclick="prevSlide()">◀</button>
-            <button onclick="nextSlide()">▶</button>
-            </div>
-        </section>
-        <section class="services">
-            <h2>VIAGENS EXECUTIVAS</h2>
-            <div class="service-list">
-              <ul>
-                <li>Aeroportos</li>
-                <li>Viagem a trabalho</li>
-                <li>Hospitais e Clinicas</li>
-                <li>Eventos e Convenções</li>
-                <li>City Tour / Passeios Personalizados</li>
-                <li>Viagens Intermunicipais ou Interestaduais</li>
-                <li>Transporte Vip para Clientes e Executivos</li>
-                <li>Entrega de Documentos ou Encomendas Urgentes </li>
-            </ul>
-            </div>
-            <button><p>Entrar em contato</p></button>
-        </section>
+            <p>Desenvolvido por <a href="https://www.instagram.com/luisjoenck/" style="color: #25D366;">@luisjoenck</a> </p>
+        </footer>
 
-
-    </section>
-  <!-- Botão flutuante WhatsApp -->
-  <a href="https://wa.me/5547988832816" target="_blank" class="whatsapp-button">
-    <i class="fab fa-whatsapp" style="font-size: 32px;"></i>
-  </a>
-
-  <footer>
-    <p>Desenvolvido por <a href="https://www.instagram.com/luisjoenck/">@luisjoenck</a></p>
-  </footer>
-
-  <script>
-    let currentSlide = 0;
-    const slides = document.getElementById('slides');
-
-    function showSlide(index) {
-      const totalSlides = slides.children.length;
-      if (index < 0) index = totalSlides - 1;
-      if (index >= totalSlides) index = 0;
-      currentSlide = index;
-      slides.style.transform = 'translateX(' + (-index * 100) + '%)';
-    }
-
-    function nextSlide() {
-      showSlide(currentSlide + 1);
-    }
-
-    function prevSlide() {
-      showSlide(currentSlide - 1);
-    }
-
-    // Troca automática a cada 5s
-    setInterval(nextSlide, 5000);
-  </script>
-
+    </div>
+    
+<script src="script.js"></script>
 </body>
 </html>
