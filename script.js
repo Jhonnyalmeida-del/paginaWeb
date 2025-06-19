@@ -1,12 +1,26 @@
-window.document.getElementById("button-menu").addEventListener("click", function() {
-    console.log("Button clicked!");
-    const menuList = window.document.getElementById("menu-list");
-    if(menuList.style.display === "none") {
+const buttonMenu = document.getElementById("button-menu");
+const menuList = document.getElementById("menu-list");
+
+// Ao clicar no botão, abre ou fecha o menu
+buttonMenu.addEventListener("click", function (event) {
+    event.stopPropagation(); // Evita que o clique propague para o documento
+    if (menuList.style.display === "flex") {
+        menuList.style.display = "none";
+    } else {
         menuList.style.display = "flex";
-    }else{
+    }
+});
+
+// Fecha o menu ao clicar fora dele
+document.addEventListener("click", function (event) {
+    const isClickInsideMenu = menuList.contains(event.target);
+    const isClickOnButton = buttonMenu.contains(event.target);
+
+    if (!isClickInsideMenu && !isClickOnButton) {
         menuList.style.display = "none";
     }
 });
+
 
 const slides = document.getElementById("slides-box");    
 const slide = slides.children;
