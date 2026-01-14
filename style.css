@@ -87,10 +87,10 @@ footer{
     align-items: center;
     justify-content: center;
     outline: 1px dashed black;
-    background-image: url('img/carro-no-aeroporto2.jpeg');
+    background-image: url('img/1.jpeg');
     background-repeat: no-repeat;
-    background-size:750px;
-    background-position:bottom left;
+    background-size:cover;
+    background-position: center;
     position: relative;
 }
 .div-init::before {
@@ -128,7 +128,7 @@ footer{
     width: 100%;
     height: fit-content;
     border-radius: 10px;
-    display: flex;
+    display: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
@@ -317,6 +317,7 @@ footer{
     align-items: center;
 }
 .slide-text{
+    display: none;
     width: 80%;
     padding: 8px;
     margin: 10px 0;
